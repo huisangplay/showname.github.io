@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Daily Name</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 3em;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // 定义姓名数组
+      const names = ['周H', '石YY', '柯C'];
+      // 获取当前日期
+      const today = new Date();
+      
+      // 计算应该显示的姓名
+      const nameIndex = today.getDate() % names.length;
+      const name = names[nameIndex];
+      
+      // 在页面上显示姓名
+      document.write("今日值班:"+name);
+    </script>
+  </body>
+</html>
